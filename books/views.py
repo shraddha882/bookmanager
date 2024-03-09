@@ -1,30 +1,8 @@
 # from django.shortcuts import render
-# #from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 # from django.urls import reverse_lazy
-# from .models import Book
-# from .forms import BookForm
-# # Create your views here.
-
-# class BookListView(ListView):
-#     model = Book
-#     paginate_by = 10
-
-# class BookCreateView(CreateView):
-#     model = Book
-#     form_class = BookForm
-
-#     #fields = ['title', 'author', 'genre', 'published_date']
-#     success_url = reverse_lazy('book_list')
-
-# class BookUpdateView(UpdateView):
-#     model = Book
-#     form_class = BookForm
-#     #fields = ['title', 'author', 'genre', 'published_date']
-#     success_url = reverse_lazy('book_list')
-
-# class BookDeleteView(DeleteView):
-#     model = Book
-#     success_url = reverse_lazy('book_list')
+from .models import Book
+from .forms import BookForm
  
 
 from rest_framework import generics, status
