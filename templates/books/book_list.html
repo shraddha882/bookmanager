@@ -1,0 +1,18 @@
+<!-- book_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <ul>
+        {% for book in object_list %}
+            <li>{{ book.title }} - {{ book.author }} - {{ book.genre }} - {{ book.published_date }}</li>
+        {% empty %}
+            <li>No books found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
